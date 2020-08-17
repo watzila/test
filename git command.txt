@@ -19,3 +19,6 @@ git reflog //可以查看操作紀錄
 git revert 版本號 之後再輸入:wq確認刪除 //刪除版本紀錄
 
 git branch  //查看有哪些分支
+git branch 新建分支名子    //
+git checkout 分支名子    //切換到分支
+git checkout -b 新建分支名子    //新建分支並切換到新分支
