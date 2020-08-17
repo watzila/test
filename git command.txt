@@ -6,7 +6,7 @@ git stauts //查看工作區內的狀態，紅字檔案表示未跟蹤的檔案
 [檔案須更新依順序執行上傳github]
 git add .或"檔案名" //.是把工作區內的所有檔案存入暫存區也可以指定檔案存入暫存區
 git commit -m"輸入描述" //從暫存區存入分支區成為正式版本-m"輸入描述"一定要寫
-git remote add origin github的repositories遠程倉庫的網址 //這是指定遠程倉庫的地方，origin是遠程倉庫的分支名子
+git remote add origin github的repositories遠程倉庫的網址 //這是指定遠程倉庫的地方，origin是遠程倉庫的分支名子(只需登入一次)
 git push -u origin master //把檔案上傳到origin的分支上
 
 [回朔任一版本]
@@ -23,8 +23,13 @@ git branch  //查看有哪些分支
 git branch -v  //查看有哪些分支(有最後更新的資訊)
 git branch 新建分支名子    //
 git checkout 分支名子    //切換到分支
-git checkout -b 新建分支名子    //新建分支並切換到新分支
+git checkout -b 新建分支名子    //新建分支並切換到新分支(本地)
+git branch -d 分支名子    //刪除分支(本地)
+git push origin :分支名     //刪除分支(遠端倉庫)
+git branch -m 分支名 新分支名       //重新命名分支
 git merge 分支名    //在要合併的分支裡寫誰要合併過來
 git fetch   //抓取遠端倉庫(github)的最新紀錄，之後要在合併完成更新
 
-git pull    //下載遠端倉庫資料 
+git pull    //遠端倉庫資料更新到本地 
+
+git clone github的repositories遠程倉庫的網址    //下載遠端倉庫的檔案
