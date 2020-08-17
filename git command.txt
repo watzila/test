@@ -4,7 +4,7 @@ git init //在資料夾創建倉庫，會自動生成.git的隱藏資料夾(暫�
 git stauts //查看工作區內的狀態，紅字檔案表示未跟蹤的檔案
 
 [檔案須更新依順序執行上傳github]
-git add .或檔案名 //.是把工作區內的所有檔案存入暫存區也可以指定檔案存入暫存區
+git add .或"檔案名" //.是把工作區內的所有檔案存入暫存區也可以指定檔案存入暫存區
 git commit -m"輸入描述" //從暫存區存入分支區成為正式版本-m"輸入描述"一定要寫
 git remote add origin github的repositories遠程倉庫的網址 //這是指定遠程倉庫的地方，origin是遠程倉庫的分支名子
 git push -u origin master //把檔案上傳到origin的分支上
@@ -16,6 +16,6 @@ git reset --hard 版本號 //使用查看操作紀錄指令找版本號，有一
 
 git reflog //可以查看操作紀錄
 
-git reveret 版本號 之後再輸入:wq確認刪除 //刪除版本紀錄
+git revert 版本號 之後再輸入:wq確認刪除 //刪除版本紀錄
 
 git branch  //查看有哪些分支
