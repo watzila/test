@@ -17,3 +17,5 @@ git reset --hard 版本號 //使用查看操作紀錄指令找版本號，有一
 git reflog //可以查看操作紀錄
 
 git reveret 版本號 之後再輸入:wq確認刪除 //刪除版本紀錄
+
+git branch  //查看有哪些分支
