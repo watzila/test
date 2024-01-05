@@ -9,6 +9,8 @@ git commit -m"輸入描述" //從暫存區存入分支區成為正式版本-m"�
 git remote add origin github的repositories遠程倉庫的網址 //這是指定遠程倉庫的地方，origin是遠程倉庫的分支名子
 git push -u origin master //把檔案上傳到origin的分支上
 
+git push -f //強制更新到遠程倉庫使版本和本機一致
+
 [回朔任一版本]
 git reset --mixed 版本號 //版本號在歷史紀錄裡有一串數字加英文的
 [還原任一版本]
@@ -27,4 +29,4 @@ git checkout -b 新建分支名子    //新建分支並切換到新分支
 git merge 分支名    //在要合併的分支裡寫誰要合併過來
 git fetch   //抓取遠端倉庫(github)的最新紀錄，之後要在合併完成更新
 
-git pull    //下載遠端倉庫資料 
+git pull    //下載遠端倉庫資料
